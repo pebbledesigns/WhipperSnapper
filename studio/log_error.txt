@@ -1,0 +1,22 @@
+Thursday 6th of February 2014 06:53:35 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF('1' = '', NULL, '1' )   
+										)' at line 17
+Whole query: INSERT INTO  `watch` (
+										`watch_ID` ,
+										`watch_TITLE` ,
+										`watch_THUMB` ,
+										`watch_SRC` ,
+										`watch_FEATURED` ,
+										`watch_TYPE`,
+										`watch_PUBLISHED`
+										)
+										VALUES (
+										NULL ,  
+										IF('asdsd' = '', NULL, 'asdsd' ) ,  
+										IF('sadsd' = '', NULL, 'sadsd' ) ,  
+										IF('asds' = '', NULL, 'asds' ) ,  
+										NULL ,  
+										IF('1' = '', NULL, '1' )   
+										IF('1' = '', NULL, '1' )   
+										)
+------------------------------------------------------

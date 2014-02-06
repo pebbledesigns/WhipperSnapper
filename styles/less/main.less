@@ -1,0 +1,858 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {  margin: 0;  padding: 0;     border: 0;  font-size: 62.5%;   font: inherit;  vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {    display: block; } body {    line-height: 1; } ol, ul {  list-style: none; } blockquote, q {     quotes: none; } blockquote:before, blockquote:after, q:before, q:after {    content: '';    content: none; } table {    border-collapse: collapse;  border-spacing: 0; }
+
+/*--------------------------------------------------*/
+/* USEFUL
+/*--------------------------------------------------*/
+    /* -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    /* -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    /* box-sizing: border-box;         /* Opera/IE 8+ */
+
+    /*---- INLINE BLOCK IE FIX ------*/
+    /* display: inline-block; */
+    /* zoom: 1; */
+    /* *display: inline; */
+
+    /*---- DROP SHADOW --------------*/
+    /* -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); */
+    /* -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); */
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); */
+
+/*--------------------------------------------------*/
+/* CLEARFIX
+/*--------------------------------------------------*/
+.clearfix               {}
+.clearfix:after         {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;} 
+html[xmlns] .clearfix   {display: block;}
+* html .clearfix        {height: 1%;}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+/*--------------------------------------------------*/
+/* VARIABLES
+/*--------------------------------------------------*/
+@pagewidth:         1024px;
+@createyellow:      #fbc311;
+@navbg :            #00a083;
+@yellow:            #fbc311;
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+#chckboxTerms {
+    width: auto !important;
+}
+
+html, body {
+    font-size: 62.5%;
+}
+strong, b {
+    font-weight: bold;
+}
+body {
+    font-size: 1REM;
+    line-height: 1.4;
+    font-family: "WinnieTheHoop" sans-serif;
+    background: #f9f9f9;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+input.error {
+    border: 3px solid red;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;         /* Opera/IE 8+ */
+   color: red;
+}
+    .error { 
+        color: red;
+        font-style: italic;;
+        }
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*--------------------------------------------------*/
+/* FONTS
+/*--------------------------------------------------*/
+@font-face{ 
+    font-family: 'WinnieTheHoop';
+    src: url('../../fontface/winniethehoop-roman-webfont.eot');
+    src: url('../../fontface/winniethehoop-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fontface/winniethehoop-roman-webfont.woff') format('woff'),
+         url('../../fontface/winniethehoop-roman-webfont.ttf') format('truetype'),
+         url('../../fontface/winniethehoop-roman-webfont.svg#WinnieTheHoop') format('svg');
+}
+
+
+
+/*--------------------------------------------------*/
+/* HEADER
+/*--------------------------------------------------*/
+
+/* Advert Banner */
+#advertBanner {
+    width: 100%;
+    height: 90px;
+}
+
+/* LOGO */
+#logo > img {
+}
+    #logo:hover {
+    background: none !important;
+    }
+
+    /*--------------------------------------------------*/
+    /* NAV
+    /*--------------------------------------------------*/
+    .navWrapperBg {
+        background: @navbg;
+    }
+            .navwrapper {
+                width: 100%;
+                height: 60px;
+                margin: auto;
+                text-align: center;
+            }
+
+                .navwrapper > ul {
+                    margin: auto;
+                    display: inline-block;
+                    zoom: 1;
+                    *display: inline;
+                }
+
+                    .navwrapper > ul > li {
+                        display: block;
+                        float: left;
+                        padding-left: 20px;
+                    }
+                    .navwrapper > ul > li:hover {
+                        background: darken(@navbg, 10%);
+                        height: 60px;
+                    }
+
+                        .navwrapper > ul > li > a {
+                            font-family: "WinnieTheHoop" sans-serif;
+                            color: #fff;
+                            text-decoration: none;
+                            letter-spacing: 0.05REM;
+                            font-size: 1.6REM;
+                            background: url('../../images/icon_menu.png') no-repeat;
+                            height: 60px;
+                            display: block;
+                            line-height: 6REM;
+                            padding: 0 2REM;
+                        }
+
+                        #nav_win        { background-position: 0 -57px; }
+                        #nav_watch      { background-position: 0 0px; }
+                        #nav_create     { background-position: 0 -117px; }
+                        #nav_gallery    { background-position: 0 -177px; }
+
+    /*--------------------------------------------------*/
+    /* HEADER BANNER
+    /*--------------------------------------------------*/
+    #sectionHeader {
+        text-align: center;
+        margin-bottom: -20px;
+        padding-bottom: 20px;
+        background-size: 100% !important;
+        background-position: top center;
+    }
+        .sectionBanner > img {
+            width: 100%;
+        }
+
+        .sectionTitle {
+            font-size: 4REM;
+            font-family: "WinnieTheHoop" sans-serif;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            padding-top: 10px;
+            background-repeat: no-repeat !important;
+            text-transform: uppercase;
+        }
+
+        .sectionBanner {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .sectionTEXT {
+            width: 60%;
+            max-width: 450px;
+            margin: 0 auto;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.4REM;
+            padding: 10px 0;
+        }
+
+    .closeAdvertBanner {
+        position: absolute; 
+        top:1%; 
+        right: 1%;
+        padding:  5px 10px;
+        color: #fff;
+        font-size: 3REM;
+        font-family: 'Roboto Slab', serif;
+        background-color: @yellow;
+    }
+        .closeAdvertBanner:hover {
+            background-color: darken(@yellow, 20%);
+        }
+
+
+/*--------------------------------------------------*/
+/* BODY
+/*--------------------------------------------------*/
+
+.grid {
+    /*border: 1px solid red;*/
+}
+
+.bodyTitle {
+    font-size: 2.6REM;
+    text-align: left;
+    padding: 20px 0;
+    font-family: "WinnieTheHoop" sans-serif;
+    letter-spacing: 0.1REM;
+}
+
+#bodyArea {
+    padding-bottom: 20px;
+}
+#bodyArea, #bodyArea a {
+    color: #fff;
+    width:100%; 
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4REM;
+}
+
+.contentIndex > a > img {
+    height: auto !important;  
+    width: 100%;  
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contentIndex > a > span.description {
+    margin: 10px 0;
+    display: block;
+}
+
+.contentRow {
+    margin-bottom: 20px;
+}
+
+
+            /*--------------------------------------------------*/
+            /* ENTER COMPETITION
+            /*--------------------------------------------------*/
+            @redButton: #ff4700;
+
+            .enterCompetition {
+                text-align: left;
+            }
+
+            #rhColumn {
+                /*text-align: left;*/
+            }
+
+            .rhTopButtons {
+                height: 20px;
+                padding: 20px 0;
+            }
+            
+                .btnTermsandConditions {
+                    font-family: 'Roboto Slab', serif;
+                    text-align: left !important;
+                    font-size: 1REM !important;
+                    background: #f8991d;
+                    padding: 5px;
+                    width: auto !important;
+                    float: left;
+                    display: block;
+                }
+                .bodyUploadBtn {
+                    padding: 10px;
+                    width: 100%;
+                    background: @redButton;
+                    text-align: center;
+                    font-family: "WinnieTheHoop" sans-serif !important;
+                    font-size: 3REM !important;
+                    margin: 20px 0;
+                    display: block;
+                    border: none;
+                    color: #fff;
+                    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+                    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+                    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+                }
+                    .bodyUploadBtn:hover {
+                        background-color: darken(@redButton, 10%);
+                        cursor: pointer;
+                    }
+
+                .btnFacebook {
+
+                }
+
+                .btnViewGallery {
+                    width: 100%;
+                    padding: 30px 20px;
+                    background: @yellow;
+                    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                    box-sizing: border-box;         /* Opera/IE 8+ */
+                    font-family: "WinnieTheHoop" sans-serif;
+                    font-size: 2REM;
+                    display: block;
+                }
+                    .btnViewGallery:hover{
+                        background-color: darken(@yellow, 10%)
+                    }
+
+                .inputTermsandConditions {
+                    text-decoration: underline;
+                }
+            .termsAndConditions {
+                display: none;
+            }
+
+            .closeTerms {
+                background-color: #02896f;
+                width: 100%;
+                display: block;
+                padding: 10px;
+                -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                box-sizing: border-box;         /* Opera/IE 8+ */
+                margin-top: 20px;
+            }
+
+            .termsAndConditions > ol {
+                list-style: decimal;
+                margin-left: 40px;
+                line-height: 26px;
+            }
+
+            .featuredInstructions {
+                height: 420px;
+                background-size: 100%;
+                background-position: 0 -17px;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+
+                .featuredContent {
+                    text-align: center;
+                    font-family: 'Roboto Slab', serif;
+                    font-size: 1.5REM;
+                    color: #fff;
+                }
+                    .featuredContent > h2 {
+                        margin-top: 30%;
+                        font-size: 3REM;
+                        font-family: "WinnieTheHoop" sans-serif;
+                    }
+                    .featuredContent > p {
+                        color: #fff;
+                        width: 80%;
+                        font-size: 1.5REM;
+                        margin: 0 auto;
+                        font-family: 'Roboto Slab', serif;
+                    }
+
+            /*--------------------------------------------------*/
+            /* CREATE
+            /*--------------------------------------------------*/
+            
+            .featuredCreatecontent > h2 {
+                font-size: 2.4REM;
+                width: 80%;
+                margin: 30% auto 0 auto;
+                line-height: 2.4REM;
+            }
+
+            .createShoppingList {
+                text-align: left;
+                padding: 10px;
+                -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                box-sizing: border-box;         /* Opera/IE 8+ */
+                color: #474747;
+            }
+                .createShoppingList > h3 {
+                    color: @createyellow;
+                    font-family: "WinnieTheHoop" sans-serif;
+                    font-size: 3REM;
+                    line-height: 2.7REM;
+                    margin-bottom: 1REM;
+                    padding-top: 10px;
+                }
+
+                .createShoppingList > ul {
+                    padding-bottom: 10px;
+                }
+                    .createShoppingList > ul > li {
+                        padding: 10px 7px;
+                    }
+                    .createShoppingList > ul > li:nth-child(even) {
+                        background-color: #f1f2f2;
+                    } 
+
+            .method {
+                padding: 10px;
+                -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                box-sizing: border-box;         /* Opera/IE 8+ */
+                text-align: left;
+                color: #474747;
+            }
+                .method > h3 {
+                    font-size: 4REM;
+                    text-align: left;
+                    color: @createyellow;
+                    font-family: "WinnieTheHoop" sans-serif;
+                }
+
+                .method > ol {
+                    list-style: decimal;
+                    padding-left: 20px;
+                }
+
+                .method > ol > li {
+                        padding: 10px 7px;
+                    }
+                    .method > ol > li:nth-child(even) {
+                        background-color: #f1f2f2;
+                    } 
+
+
+            /*--------------------------------------------------*/
+            /* WATCH
+            /*--------------------------------------------------*/
+            .watchVideos {
+                position: relative;
+            }
+                .watchVideos > .tag {
+                    position: absolute;
+                    top: -54px;
+                    left: -5px;
+                    width: 100px;
+                    padding: 5px 0;
+                    background-color: red;
+                }
+
+/*--------------------------------------------------*/
+/* FOOTER
+/*--------------------------------------------------*/
+
+.footer-container {
+    padding-top: 2REM;
+}
+footer {
+}
+    footer > div > div > img {
+    width: 100%;
+    }
+copyright {
+    font-family: 'Roboto Slab', serif;
+    text-align: right;
+    padding-top: 5px;
+    color: #939598;
+}
+
+    /* Footer NAV */
+.footerNav {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding-top: 5px;
+    color: #939598;
+}
+    .footerNav li {
+    display: inline-block; 
+    zoom: 1; 
+    *display: inline; 
+    }
+            .footerNav li > a {
+                padding: 0 0.2REM;
+                color: #939598;
+            }
+
+.row {
+    margin-bottom: 2REM;
+}
+
+
+
+/*--------------------------------------------------*/
+/* UPLOADER
+/*--------------------------------------------------*/
+
+.ajax-file-upload-statusbar {
+    margin-top: 10px;
+    width: 100%;
+}
+.ajax-file-upload-filename {
+    width: 100%;
+    height: auto;
+    margin: 0 5px 5px 10px;
+    color: #807579;
+}
+.ajax-file-upload-progress {
+
+    position: relative;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 1px;
+    border-radius: 3px;
+    display: inline-block
+}
+.ajax-file-upload-bar {
+    background-color: green;
+    width: 0;
+    height: 20px;
+    border-radius: 3px;
+    color:#FFFFFF;
+}
+.ajax-file-upload-percent {
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    left: 48%
+}
+.ajax-file-upload-red {
+    -moz-box-shadow: inset 0 39px 0 -24px #e67a73;
+    -webkit-box-shadow: inset 0 39px 0 -24px #e67a73;
+    box-shadow: inset 0 39px 0 -24px #e67a73;
+    background-color: #e4685d;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 4px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #b23e35;
+    cursor: pointer;
+    vertical-align: top;
+    margin-right:5px;
+}
+.ajax-file-upload-green {
+    background-color: #77b55a;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #fff;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 4px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #5b8a3c;
+    vertical-align: top;
+    margin-right:5px;
+}
+.ajax-file-upload {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+       font-weight: bold;
+        padding: 15px 20px;
+        cursor:pointer; 
+        line-height:20px;
+        height:25px;
+        margin:0 10px 10px 0;
+      display: inline-block;
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      color: #888;
+      text-decoration: none;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -moz-box-shadow: 0 2px 0 0 #e8e8e8;
+      -webkit-box-shadow: 0 2px 0 0 #e8e8e8;
+      box-shadow: 0 2px 0 0 #e8e8e8; 
+      padding: 6px 10px 4px 10px; 
+      color: #fff;
+      background: #2f8ab9;
+      border: none;
+      -moz-box-shadow: 0 2px 0 0 #13648d;
+      -webkit-box-shadow: 0 2px 0 0 #13648d;
+      box-shadow: 0 2px 0 0 #13648d; 
+      vertical-align:middle;  
+  }
+  
+.ajax-file-upload:hover {
+      -moz-box-shadow: 0 2px 0 0 #15719f;
+      -webkit-box-shadow: 0 2px 0 0 #15719f;
+      box-shadow: 0 2px 0 0 #15719f;
+      background-color: darken(#ff4700, 10%) !important;
+}
+
+.ajax-upload-dragdrop
+{
+
+   
+    width:100%;
+    text-align:left;
+    vertical-align:middle;
+}
+
+
+.ajax-file-upload {
+    border: 10px solid red;
+    background-color: red !important;
+    padding: 10px;
+    width: 100% !important;
+    background: #ff4700;
+    text-align: center !important;
+    font-family: "WinnieTheHoop" sans-serif !important;
+    font-size: 3REM !important;
+    margin: 20px 0;
+    display: block;
+    border: none;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+#success {
+    display: none;
+    background-color: green !important;
+    padding: 10px;
+    color: #fff;
+    width: 100% !important;
+    background: #ff4700;
+    text-align: center !important;
+    font-family: "WinnieTheHoop" sans-serif !important;
+    font-size: 3REM !important;
+    margin: 20px 0;
+    display: block;
+    border: none;
+    -webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+

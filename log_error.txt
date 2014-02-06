@@ -1,0 +1,152 @@
+Thursday 23rd of January 2014 11:05:59 AM
+Invalid query: Table 'whippersnapper.members' doesn't exist
+Whole query: SELECT * from members
+------------------------------------------------------
+Thursday 23rd of January 2014 11:05:59 AM
+Invalid query: Table 'whippersnapper.members' doesn't exist
+Whole query: SELECT * from members
+------------------------------------------------------
+Thursday 23rd of January 2014 11:06:36 AM
+Invalid query: Table 'whippersnapper.members' doesn't exist
+Whole query: SELECT * from members
+------------------------------------------------------
+Thursday 23rd of January 2014 11:06:36 AM
+Invalid query: Table 'whippersnapper.members' doesn't exist
+Whole query: SELECT * from members
+------------------------------------------------------
+Monday 27th of January 2014 05:47:37 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = $sectionName LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:47:37 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = $sectionName LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:48:36 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:48:36 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:48:40 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:49:30 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:49:31 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:50:21 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:50:21 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:50:37 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:50:43 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:50:43 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:50:45 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:51:13 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:51:13 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where section_NAME = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:51:33 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where `section_NAME` = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:51:33 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where `section_NAME` = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 05:51:34 PM
+Invalid query: Unknown column 'section_NAME' in 'where clause'
+Whole query: select * from sections where `section_NAME` = 'watch' LIMIT 1
+------------------------------------------------------
+Monday 27th of January 2014 06:15:39 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:16:20 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:17:56 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:18:08 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:18:53 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:18:53 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:19:01 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:19:55 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create' at line 1
+Whole query: select * from create
+------------------------------------------------------
+Monday 27th of January 2014 06:24:01 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE create_ID = '1'' at line 1
+Whole query: select * from create WHERE create_ID = '1'
+------------------------------------------------------
+Monday 27th of January 2014 06:24:01 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE create_ID = '1'' at line 1
+Whole query: select * from create WHERE create_ID = '1'
+------------------------------------------------------
+Monday 27th of January 2014 06:24:30 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE create_ID = '1'' at line 1
+Whole query: select * from create WHERE create_ID = '1'
+------------------------------------------------------
+Monday 27th of January 2014 06:24:30 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE create_ID = '1'' at line 1
+Whole query: select * from create WHERE create_ID = '1'
+------------------------------------------------------
+Monday 27th of January 2014 06:24:49 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE create_ID = '1'' at line 1
+Whole query: select * from create WHERE create_ID = '1'
+------------------------------------------------------
+Monday 27th of January 2014 06:24:49 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE create_ID = '1'' at line 1
+Whole query: select * from create WHERE create_ID = '1'
+------------------------------------------------------
+Monday 27th of January 2014 06:25:06 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE `create_ID` = '1'' at line 1
+Whole query: select * from create WHERE `create_ID` = '1'
+------------------------------------------------------
+Monday 27th of January 2014 06:25:06 PM
+Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create WHERE `create_ID` = '1'' at line 1
+Whole query: select * from create WHERE `create_ID` = '1'
+------------------------------------------------------
