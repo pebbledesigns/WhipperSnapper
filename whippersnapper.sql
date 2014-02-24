@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 24, 2014 at 05:17 PM
+-- Generation Time: Feb 24, 2014 at 05:20 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `comps`
 --
 
-CREATE TABLE `comps` (
+CREATE TABLE IF NOT EXISTS `comps` (
   `comps_ID` int(11) NOT NULL AUTO_INCREMENT,
   `comps_TITLE` varchar(250) DEFAULT NULL,
   `comps_DESCRIPTION` varchar(950) DEFAULT NULL,
@@ -54,7 +54,7 @@ INSERT INTO `comps` (`comps_ID`, `comps_TITLE`, `comps_DESCRIPTION`, `comps_THUM
 -- Table structure for table `create`
 --
 
-CREATE TABLE `create` (
+CREATE TABLE IF NOT EXISTS `create` (
   `create_ID` int(11) NOT NULL AUTO_INCREMENT,
   `create_TITLE` varchar(250) NOT NULL,
   `create_DESCRIPTION` varchar(450) NOT NULL,
@@ -88,7 +88,7 @@ INSERT INTO `create` (`create_ID`, `create_TITLE`, `create_DESCRIPTION`, `create
 -- Table structure for table `create_SHOPPINGLIST`
 --
 
-CREATE TABLE `create_SHOPPINGLIST` (
+CREATE TABLE IF NOT EXISTS `create_SHOPPINGLIST` (
   `create_shoppinglist_ID` int(11) NOT NULL AUTO_INCREMENT,
   `create_shoppinglist_TEXT` varchar(450) NOT NULL,
   `create_shoppinglist_CREATEID` int(5) NOT NULL,
@@ -151,7 +151,7 @@ INSERT INTO `create_SHOPPINGLIST` (`create_shoppinglist_ID`, `create_shoppinglis
 -- Table structure for table `create_STEPS`
 --
 
-CREATE TABLE `create_STEPS` (
+CREATE TABLE IF NOT EXISTS `create_STEPS` (
   `create_steps_ID` int(11) NOT NULL AUTO_INCREMENT,
   `create_steps_TEXT` varchar(650) NOT NULL,
   `create_steps_CREATEID` int(5) NOT NULL,
@@ -214,7 +214,7 @@ INSERT INTO `create_STEPS` (`create_steps_ID`, `create_steps_TEXT`, `create_step
 -- Table structure for table `gallery_CATEGORIES`
 --
 
-CREATE TABLE `gallery_CATEGORIES` (
+CREATE TABLE IF NOT EXISTS `gallery_CATEGORIES` (
   `gallery_categories_ID` int(11) NOT NULL AUTO_INCREMENT,
   `gallery_categories_TEXT` varchar(350) NOT NULL,
   `gallery_categories_THMB` varchar(150) NOT NULL,
@@ -235,7 +235,7 @@ INSERT INTO `gallery_CATEGORIES` (`gallery_categories_ID`, `gallery_categories_T
 -- Table structure for table `gallery_ENTRIES`
 --
 
-CREATE TABLE `gallery_ENTRIES` (
+CREATE TABLE IF NOT EXISTS `gallery_ENTRIES` (
   `gallery_entries_ID` int(11) NOT NULL AUTO_INCREMENT,
   `gallery_entries_NAME` varchar(150) NOT NULL,
   `gallery_entries_THUMB` varchar(150) NOT NULL,
@@ -256,7 +256,7 @@ INSERT INTO `gallery_ENTRIES` (`gallery_entries_ID`, `gallery_entries_NAME`, `ga
 -- Table structure for table `sections`
 --
 
-CREATE TABLE `sections` (
+CREATE TABLE IF NOT EXISTS `sections` (
   `sections_ID` int(11) NOT NULL AUTO_INCREMENT,
   `sections_NAME` varchar(250) NOT NULL,
   `sections_BGIMAGE` varchar(250) NOT NULL,
@@ -283,7 +283,7 @@ INSERT INTO `sections` (`sections_ID`, `sections_NAME`, `sections_BGIMAGE`, `sec
 -- Table structure for table `watch`
 --
 
-CREATE TABLE `watch` (
+CREATE TABLE IF NOT EXISTS `watch` (
   `watch_ID` int(5) DEFAULT NULL,
   `watch_TITLE` varchar(150) NOT NULL,
   `watch_THUMB` varchar(35) NOT NULL,
