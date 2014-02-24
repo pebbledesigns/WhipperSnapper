@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 06, 2014 at 07:03 PM
+-- Generation Time: Feb 24, 2014 at 05:17 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -39,7 +39,7 @@ CREATE TABLE `comps` (
   `COMPS_ENTRYINSTRUCTIONS` varchar(450) DEFAULT NULL,
   `comps_GALLERYLINK` int(1) DEFAULT NULL,
   PRIMARY KEY (`comps_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=50 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `comps`
