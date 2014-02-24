@@ -10,12 +10,12 @@ $GLOBALS['config'] = array(
 				'db' => 'whippersnapper'
 			),
 			'url' => array(
-				'absolute' => '/Users/denzel2364/Dropbox/htdocs/whippersnapper/studio/',
+				'absolute' => '/Applications/MAMP/htdocs/whippersnapper/studio/',
 				'baseurl' => 'http://localhost:8888/whippersnapper/studio/',
 			),
 			'session' => array(
 			),
-			'filename' => substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1),
+			'filename' => substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1)
 );
 
 // Set config  to use the following: config::get('urls/absolute')

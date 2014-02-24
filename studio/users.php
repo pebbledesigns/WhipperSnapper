@@ -23,22 +23,39 @@ $page = 'admin';
 echo $template->lhcolumn();
 
 // LH COLUMN
-echo $template->header();
+echo $template->header('<span class="fa fa-users"></span> Users');
 
 //-----------------------------------------------------
 // BODY
 //-----------------------------------------------------
 
+$sql = DB::getInstance()->query("SELECT * from `pd_MEMBERS`");
+
+
 echo '<div id="bodyContent">
 			<div class="row">
 				<div class="module slot-0-1-2">
-					<h2>Example title</h2>
-					<ul>
-						<li>Example content 1</li>
-						<li>Example content 2</li>
-						<li>Example content 3</li>
-					</ul>
-				</div>
+					<h2>Users</h2>
+
+					<div class="grid userList" style="padding: 2REM;">
+						<div class="row header">
+							<div class="slot-1">Username</div>
+							<div class="slot-2-3-4">Email</div>
+							<div class="slot-5">Role</div>
+						</div>
+						
+					';
+				
+				foreach($sql->results() as $data) { ?>
+        		 	<div class="row">
+        		 		<div class="slot-1"> <?php echo $data->pd_members_USERNAME ?> </div>
+						<div class="slot-2-3-4"><?php echo $data->pd_members_EMAIL ?></div>
+						<div class="slot-5">a</div>
+					</div>
+				<?php }
+				echo '</div>';
+					
+		  echo '</div>
 				<div class="module slot-3-4-5">
 					<h2>Example title 2</h2>
 					<ul>
@@ -49,21 +66,6 @@ echo '<div id="bodyContent">
 				</div>
 			</div>
 </div>';
-
-    
-
-    $module = new loadModule(config::get('url/absolute') . "/modules");
-					if ($module->count > 0) {
-						foreach($module->getModuleList() as $child) {
-							echo '<li class="row">'
-								.'<div class="slot-10"><i class="fa '.$child->pageIcon.'"></i> '.$child->moduleName.'</div>'
-								.'<div class="slot-11-12">'.$child->moduleDescription.'</div>'
-								.'<div class="slot-13">'.$child->version.'</div>'
-								.'<div class="slot-14">'.$child->db_table.'</div>'
-								.'<div class="slot-15">'.$child->db_table.'</div>'
-								.'</li>';
-						}
-					} 
 
 
 //-----------------------------------------------------

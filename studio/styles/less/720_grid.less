@@ -2,28 +2,13 @@
  *	http://simplegrid.info
  *	by Conor Muirhead (http://conor.cc) of Early LLC (http://earlymade.com)	
  *  License: http://creativecommons.org/licenses/MIT/	*/
+
 /* Containers */
-body {
-  font-size: 0.75REM;
-  padding: 0;
-}
-.grid {
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 100%;
-}
-.row {
-  clear: left;
-}
+body { font-size: 0.75REM; padding: 0; }
+.grid{ margin:0 auto; padding: 0 10px; width:100%; }
+.row{ clear:left; }
+
+
 /* Row Clearfix */
-.row:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-.row {
-  zoom: 1;
-}
+.row:after{ visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
+.row{ zoom:1; }

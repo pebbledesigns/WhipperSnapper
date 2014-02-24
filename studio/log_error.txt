@@ -1,22 +1,404 @@
-Thursday 6th of February 2014 06:53:35 PM
-Invalid query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF('1' = '', NULL, '1' )   
-										)' at line 17
-Whole query: INSERT INTO  `watch` (
-										`watch_ID` ,
-										`watch_TITLE` ,
-										`watch_THUMB` ,
-										`watch_SRC` ,
-										`watch_FEATURED` ,
-										`watch_TYPE`,
-										`watch_PUBLISHED`
-										)
-										VALUES (
-										NULL ,  
-										IF('asdsd' = '', NULL, 'asdsd' ) ,  
-										IF('sadsd' = '', NULL, 'sadsd' ) ,  
-										IF('asds' = '', NULL, 'asds' ) ,  
-										NULL ,  
-										IF('1' = '', NULL, '1' )   
-										IF('1' = '', NULL, '1' )   
-										)
+Monday 24th of February 2014 02:22:11 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = ''
+------------------------------------------------------
+Monday 24th of February 2014 02:23:09 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 02:23:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 02:23:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 02:23:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 02:23:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 02:24:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 03:44:18 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:44:52 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:44:52 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 03:44:52 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 03:44:52 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 03:45:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:45:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 03:45:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 03:45:34 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 03:47:32 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:47:32 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 03:47:32 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 03:47:32 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 03:48:12 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:48:12 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 03:48:12 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 03:48:12 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 03:58:53 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:58:53 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 03:58:53 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 03:58:53 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:15 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:15 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:15 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:15 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 03:59:48 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:01:46 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:01:46 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:01:46 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:01:46 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:02:51 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:02:51 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:02:51 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:02:51 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:03 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:03 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:03 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:03 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:16 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:16 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:16 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:16 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:30 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:30 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:30 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:03:30 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:14 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:14 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:14 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:14 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:29 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:29 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:29 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:29 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:47 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:47 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:47 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:47 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:04:54 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:07:25 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:07:25 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:07:25 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:07:25 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 04:08:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '1'
+------------------------------------------------------
+Monday 24th of February 2014 04:08:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '2'
+------------------------------------------------------
+Monday 24th of February 2014 04:08:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '5'
+------------------------------------------------------
+Monday 24th of February 2014 04:08:00 PM
+Invalid query: Unknown column 'pd_regions_PARENT' in 'where clause'
+Whole query: SELECT * from `pd_REGIONS` WHERE `pd_regions_PARENT` = '6'
+------------------------------------------------------
+Monday 24th of February 2014 05:13:30 PM
+Invalid query: Table 'whippersnapper.pd_pages' doesn't exist
+Whole query: SELECT * from `pd_PAGES` WHERE `pd_pages_PARENT` IS NULL
+------------------------------------------------------
+Monday 24th of February 2014 05:13:30 PM
+Invalid query: Table 'whippersnapper.pd_categories' doesn't exist
+Whole query: SELECT * from `pd_CATEGORIES`
+------------------------------------------------------
+Monday 24th of February 2014 05:14:05 PM
+Invalid query: Table 'whippersnapper.pd_pages' doesn't exist
+Whole query: SELECT * from `pd_PAGES` WHERE `pd_pages_PARENT` IS NULL
+------------------------------------------------------
+Monday 24th of February 2014 05:14:05 PM
+Invalid query: Table 'whippersnapper.pd_categories' doesn't exist
+Whole query: SELECT * from `pd_CATEGORIES`
+------------------------------------------------------
+Monday 24th of February 2014 05:15:14 PM
+Invalid query: Table 'whippersnapper.pd_members' doesn't exist
+Whole query: SELECT * from `pd_MEMBERS`
+------------------------------------------------------
+Monday 24th of February 2014 05:15:17 PM
+Invalid query: Table 'whippersnapper.pd_pages' doesn't exist
+Whole query: SELECT * from `pd_PAGES` WHERE `pd_pages_PARENT` IS NULL
+------------------------------------------------------
+Monday 24th of February 2014 05:15:17 PM
+Invalid query: Table 'whippersnapper.pd_categories' doesn't exist
+Whole query: SELECT * from `pd_CATEGORIES`
+------------------------------------------------------
+Monday 24th of February 2014 05:15:19 PM
+Invalid query: Table 'whippersnapper.pd_members' doesn't exist
+Whole query: SELECT * from `pd_MEMBERS`
+------------------------------------------------------
+Monday 24th of February 2014 05:15:20 PM
+Invalid query: Table 'whippersnapper.pd_pages' doesn't exist
+Whole query: SELECT * from `pd_PAGES` WHERE `pd_pages_PARENT` IS NULL
+------------------------------------------------------
+Monday 24th of February 2014 05:15:20 PM
+Invalid query: Table 'whippersnapper.pd_categories' doesn't exist
+Whole query: SELECT * from `pd_CATEGORIES`
 ------------------------------------------------------

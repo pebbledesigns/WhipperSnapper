@@ -20,26 +20,61 @@ class template {
 	        <link rel="stylesheet" href="'. config::get('url/baseurl') .'styles/css/main.css">
 	        <!--[if lt IE 9 ]><link rel="stylesheet" href="./css/720_grid.css" type="text/css"><![endif]-->
 			<link rel="stylesheet" href="'. config::get('url/baseurl') .'styles/css/720_grid.css" type="text/css" media="screen and (min-width: 720px)">
-			<link rel="stylesheet" href="'. config::get('url/baseurl') .'styles/css/986_grid.css" type="text/css" media="screen and (min-width: 986px)">';
+			<link rel="stylesheet" href="'. config::get('url/baseurl') .'styles/css/986_grid.css" type="text/css" media="screen and (min-width: 986px)">
+			<link rel="stylesheet" href="'. config::get('url/baseurl') .'styles/css/font-awesome.css" type="text/css">
+			<link rel="stylesheet" href="'. config::get('url/baseurl') .'styles/css/avgrund.css" type="text/css">
+		</head>
+		<body>';
 	}
 
-
-	public function nav($currentpage=null) {
-		// Master Navigation
+	public function header($title = 'Dashboard') {
 		return '
-			<div class="navWrapperBg">
-				<div class="navwrapper grid">
-					<ul class="nav row">
-						<li class="slot-1"><a href="'. config::get('url/baseurl') .'win.php" id=\'nav_win\' >WIN</a></li>
-						<li class="slot-2"><a href="'. config::get('url/baseurl') .'watch.php" id=\'nav_watch\' >WATCH</a></li>
-						<li class="slot-3" id="logo"><img style="" height="55" src="'. config::get('url/baseurl') .'images/logo.png" /></li>
-						<li class="slot-4"><a href="'. config::get('url/baseurl') .'create.php" id=\'nav_create\' >CREATE</a></li>
-						<li class="slot-5"><a href="'. config::get('url/baseurl') .'gallery.php" id=\'nav_gallery\' >GALLERY</a></li>
-					</ul>
+			<header>
+				<h1 class="title">'.$title.'</h1>
+				<div id="rhControls">
+					<a class="fa fa-plus-circle" href="" title="Add User"></a>
+					<a class="fa fa-cog" href="" title="Settings"></a>
 				</div>
-			</div><!- navwrapper ->
 			</header>
+
 		';
+	}
+
+	public function lhcolumn($currentpage=null) {
+		$lhcolumn = '<section id="wrapper">
+						<aside id="lhcolumn">
+							<div id="" style="background: #1382b7; height: 80px; width: 100%;"></div>
+							<nav>
+								<ul>
+									<li><a href="pages.php"><span class="fa fa-files-o"></span> Pages</a></li>';
+									$module = new loadModule(config::get('url/absolute') . "/modules");
+									if ($module->count > 0) {
+										foreach($module->getModuleList() as $child) {
+											$lhcolumn .= '<li><a href="pages.php"><span class="fa '.$child->pageIcon.'"></span>'.$child->moduleName.'</a></li>';
+										}
+									} 
+				  $lhcolumn .= '</ul>
+							</nav>
+							
+							<h2 class="sectionTitle"> Settings </h2>
+							<nav>
+								<ul>
+									<li><a href="users.php"><span class="fa fa-users"></span> Users</a></li>
+									<li><a href="modules.php"><span class="fa fa-sitemap"></span> Modules</a></li>
+									<li><a href="regions.php"><span class="fa fa-th-large"></span> Regions</a></li>
+									<li><a href=""><span class="fa fa-star"></span> Menu 4</a></li>
+								</ul>
+							</nav>
+
+							<div id="asideFooter">&copy; '.date('Y').' Pebble Designs</div>
+
+
+
+						</aside>
+
+			';
+			return $lhcolumn;
+
 	}
 
 
